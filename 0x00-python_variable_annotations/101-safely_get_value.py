@@ -6,8 +6,12 @@ from typing import Any, Mapping, TypeVar, Union
 
 
 T = TypeVar('T') # Represents the type of the value in the dictionary and the default
-def safely_get_value(dct: Mapping[Any, T], key: Any, default: Union[T, None] = None) -> Union[T, None]:
-    """ Safely get value """
+Res = Union[Any, T]
+Def = Union[T, None]
+
+
+def safely_get_value(dct: Mapping, Key: Any, default: Def = None) -> Res:
+    """ Retrieves a value from a dict using a given key. """
     if key in dct:
         return dct[key]
     else:
