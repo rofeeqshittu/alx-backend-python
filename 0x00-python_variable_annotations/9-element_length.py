@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 """
-    Contains to_kv function
+    Contains element_length function
 """
-from typing import Callable
+from typing import Iterable, Sequence, List, Tuple
 
 
-def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """ Make multiplier function """
-    def multiplier_function(value: float) -> float:
-        """ Multiplier function """
-        return value * multiplier
-    return multiplier_function
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """ Return element Length """
+    return [(i, len(i)) for i in lst]
