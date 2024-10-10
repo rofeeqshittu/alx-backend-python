@@ -10,7 +10,7 @@ Res = Union[Any, T]
 Def = Union[T, None]
 
 
-def safely_get_value(dct: Mapping, Key: Any, default: Def = None) -> Res:
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """ Retrieves a value from a dict using a given key. """
     if key in dct:
         return dct[key]
