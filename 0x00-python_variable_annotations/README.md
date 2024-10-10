@@ -3,6 +3,8 @@
 ## Overview
 This project focuses on understanding and applying variable annotations in Python, leveraging Python's type hints to enhance code readability and maintainability. It covers concepts like type annotations for functions, variables, duck typing, and validation with mypy.
 
+![py-strongly_dynamically_typed.png](py-strongly_dynamically_typed.png)
+
 ## Concepts
 - Type annotations in Python 3
 - Function signatures and variable types
