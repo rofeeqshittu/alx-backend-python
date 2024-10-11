@@ -2,7 +2,6 @@
 """
     Contains zoom_array function
 """
-
 from typing import List, Tuple
 
 
