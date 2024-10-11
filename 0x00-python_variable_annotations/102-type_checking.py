@@ -3,14 +3,14 @@
     Contains zoom_array function
 """
 
-from typing import List, Tuple, Sequence
+from typing import List, Tuple
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """ Zoom array functions. """
     zoomed_in: List = [
         item for item in lst
-        for i in range(factor)
+        for i in range(int(factor))
     ]
     return zoomed_in
 
